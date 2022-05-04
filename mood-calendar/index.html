@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Title</title>
+		<title>Календарь настроения</title>
 		<link rel="stylesheet" href="style.css">
 		<script src="script.js" defer></script>
 	</head>
 	<body>
 	<div class="container">
 		<h2>2022 Календарь настроения</h2>
-		<h4> ... каждый день имеет цвет настроения, в котором ты был в каждый момент</h4>
-		<p>Чё, выбирай смайл настроения</p>
+		<h4> ... каждый день имеет цвет настроения, в котором ты был в тогдашний момент...</h4>
+		<p>Чё, выбирай смайл настроения здесь ...</p>
 		<div class="moods_container">
 			<button class="mood mood_1" id="mood_1">
 				<i class="far fa-laugh"></i>
@@ -29,7 +29,15 @@
 				<i class="far fa-sad-tear"></i>
 			</button>
 		</div>
-		<p>...а потом выбирай нужный день и пройзойдет выделение</p>
+		<p>...а потом выбирай нужный день и пройзойдет выделение...</p>
+		<p>...не забывай о иконках справа ...</p>
+		<button id="randomize" class="action_btn randomize">
+			<i class="fas fa-random"></i>
+		</button>
+		<button id="clear" class="action_btn clear">
+			<i class="fas fa-sync"></i>
+		</button>
+		<div id="calendar" class="calendar"></div>
 	</div>
 	</body>
 </html>
