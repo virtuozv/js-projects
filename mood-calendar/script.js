@@ -16,7 +16,7 @@ const months = [
 ];
 
 const colors = ['#2d6b5f', '#72e3a6', '#dff4c7', '#edbf98', '#ea3d36'];
-const defaultColor = '#888';
+const defaultColor = '#E0E0E0';
 let activeColor = '';
 
 const calendar = document.getElementById('calendar');
@@ -108,3 +108,26 @@ function createDateEl(date) {
 
     return dateEl;
 }
+
+const circles = document.querySelectorAll('.circle');
+circles.forEach(circle => {
+    circle.addEventListener('click', () => {
+        circle.style.backgroundColor = activeColor;
+    })
+})
+
+randomize.addEventListener('click', () => {
+circles.forEach(circle => {
+    circle.style.backgroundColor = getRandomColor();
+    });
+});
+
+function getRandomColor() {
+    return colors[Math.floor(Math.random() * 5)];
+}
+
+clear.addEventListener('click', () => {
+    circles.forEach(circle => {
+        circle.style.backgroundColor = defaultColor;
+    })
+});

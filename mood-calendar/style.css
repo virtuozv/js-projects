@@ -6,7 +6,7 @@
 }
 
 :root {
-	--mood-color-1: #2d6b5f;
+	--mood-color-1: #9effd3;
 	--mood-color-2: #72e3a6;
 	--mood-color-3: #dff4c7;
 	--mood-color-4: #edbf98;
@@ -111,6 +111,13 @@ p {
 	top: 80px;
 }
 
+.action_btn.nothing {
+	background-color: #fff;
+	color: red;
+	right: 40px;
+	top: 80px;
+}
+
 .action_btn:active {
 	transform: scale(0.9);
 }
@@ -159,4 +166,21 @@ p {
 .months {
 	padding: 10px;
 	width:33%;
+}
+
+.days .circle {
+	background-color: #E0E0E0;
+	border-radius: 50%;
+	color: #000;
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	width: 22px;
+	height: 20px;
+}
+
+.days .circle:hover {
+	transform: scale(1.1);
 }
