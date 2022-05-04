@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css');
+
+* {
+	box-sizing:  border-box;
+}
+
+:root {
+	--mood-color-1: #2d6b5f;
+	--mood-color-2: #72e3a6;
+	--mood-color-3: #dff4c7;
+	--mood-color-4: #edbf98;
+	--mood-color-5: #ea3d36;
+}
+
+body {
+	font-family:  'Caveat', cursive;
+	font-size: 28px;
+	margin:  40px 0;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+h4 {
+	font-weight: 100;
+	margin: 5px 0 20px;
+}
+
+p {
+	margin: 5px 0;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 30px;
+	text-align: center;
+}
+
+.mood {
+	background-color: #fff;
+	border: 0;
+	border-radius: 50%;
+	color: #000;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	line-height: 20px;
+	padding: 0;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+}
+
+.mood_1 {
+	color: var(--mood-color-1);
+}
+
+.mood_2 {
+	color: var(--mood-color-2);
+}
+
+.mood_3 {
+	color: var(--mood-color-3);
+}
+
+.mood_4 {
+	color: var(--mood-color-4);
+}
+
+.mood_5 {
+	color: var(--mood-color-5);
+}
