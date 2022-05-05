@@ -1,8 +1,8 @@
-const nr_of_particles = 2500;
+const nr_of_particles = 1000;
 const particles = [];
 const field = [];
 const size = 20;
-const yellow = 'rgba(252, 186, 3, 1)';
+const yellow = 'green';
 
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
