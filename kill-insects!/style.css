@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css');
+
+* {
+	box-sizing:  border-box;
+}
+
+body {
+	font-family: 'Press Start 2P';
+	margin:  0;
+	text-align: center;
+	flex-direction: column;
+	overflow: hidden;
+	height: 100vh;
+	background-color: #006E7F;
+	color: #fff;
+}
+
+.insects_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+}
+
+.insects_list li {
+	margin: 10px;
+}
+
+.choose_insect_btn {
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Press Start 2P';
+	width: 150px;
+	height: 150px;
+}
+
+.choose_insect_btn:hover {
+	background-color: white;
+	color: black;
+}
+
+.choose_insect_btn img {
+	width: 100px;
+}
+
+.screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	transition: margin 0.75s linear;
+}
+
+.screen.up {
+	margin-top: -100vh;
+}
+
+.btn {
+	background-color: #fff;
+	border: 0;
+	color: #006E7F;
+	padding: 15px 20px;
+	font-family: 'Press Start 2P';
+	cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
