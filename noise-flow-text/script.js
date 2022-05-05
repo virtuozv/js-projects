@@ -2,7 +2,7 @@ const nr_of_particles = 1000;
 const particles = [];
 const field = [];
 const size = 20;
-const yellow = 'green';
+const yellow = 'aqua';
 
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
@@ -60,7 +60,7 @@ class Particle {
 	}
 
 	draw() {
-		stroke(random() < 0.5 ? yellow : 'rgba(255,255,255, 1)');
+		stroke(random() < 0.5 ? yellow : 'black');
 		// stroke();
 		strokeWeight(0.5);
 		line(this.prevPos.x, this.prevPos.y, this.pos.x, this.pos.y);
