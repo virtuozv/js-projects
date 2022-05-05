@@ -42,10 +42,16 @@ body {
 .choose_insect_btn:hover {
 	background-color: white;
 	color: black;
+	transform: scale(1.2);
 }
 
 .choose_insect_btn img {
 	width: 100px;
+	transition: transform .5s ease 0s;
+}
+
+.choose_insect_btn img:hover {
+	transform: rotate(-30deg);
 }
 
 .screen {
@@ -75,3 +81,8 @@ body {
 	opacity: 0.9;
 }
 
+.sub_srcsm {
+	font-size: 7px;
+	right: 55px;
+	position: relative;
+}
