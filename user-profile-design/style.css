@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
+* {
+	box-sizing:  border-box;
+}
+
+:root {
+	--light-col: #D9C4B1;
+	--dark-col: #B59B80;
+	--second-col: #b76eb8;
+}
+
+body {
+	background-color: #D9C4B1;
+	background-image: radial-gradient(circle, var(--light-col), var(--dark-col));
+	font-family: 'Roboto', serif;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.user-profile-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: row;
+}
+
+.user-profile {
+	background-image: linear-gradient(transparent, gray),  url(the-user.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	width: 300px;
+	height: 500px;
+	z-index: 3;
+	box-shadow: 0 15px 55px rgba(0, 0, 0, 0.5);
+	color: #eee;
+}
+
+.user-profile h3 {
+	margin: 0;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px gray;
+}
+
+.user-profile p {
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin: 5px 0 10px;
+	text-shadow: 1px 1px 1px gray;
+}
+
+.user-info {
+	background-color: white;
+	z-index: 2;
+	border-radius: 5px;
+	width: 80%;
+	margin-top: -15px;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding: 30px 0 15px;
+	box-shadow: 0 5px 55px rgba(0, 0, 0, 0.5);
+}
+
+.user-info h3 {
+	margin: 0;
+}
+
+.user-info small {
+	color: #bbb;
+	font-weight: 100;
+	font-size: 12px;
+	margin: 0;
+}
+
+.follow-btn {
+	background-color: var(--second-col);
+	border-radius: 5px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 20px 0 20px;
+	color: white;
+	margin-top: -25px;
+	text-align: center;
+	width: 60%;
+	z-index: 1;
+	/*box-shadow: 0 15px 55px rgba(0, 0, 0, 0.5);*/
+}
