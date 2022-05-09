@@ -13,13 +13,13 @@
 
 body {
 	background-color: #D9C4B1;
-	background-image: radial-gradient(circle, var(--light-col), var(--dark-col));
+	background-image: radial-gradient(circle, honeydew, gray);
 	font-family: 'Roboto', serif;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
+	min-height: 95vh;
 }
 
 .user-profile-container {
@@ -89,7 +89,7 @@ body {
 }
 
 .follow-btn {
-	background-color: var(--second-col);
+	background-color: darkcyan;
 	border-radius: 5px;
 	letter-spacing: 5px;
 	text-transform: uppercase;
