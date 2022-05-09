@@ -86,3 +86,51 @@ body {
 	right: 55px;
 	position: relative;
 }
+
+.game_container {
+	position: relative;
+}
+
+#time, #score {
+	position:absolute;
+	top: 20px;
+}
+
+#time {
+	left: 20px;
+}
+
+#score {
+	right: 20px;
+}
+.insect {
+	position: absolute;
+	transform: translate(-50%, -50%) scale(1);
+	cursor: pointer;
+	transition: transform 0.3s ease-out;
+}
+
+.insect img {
+	object-fit: contain;
+	height: 111px;
+	width: 111px;
+}
+
+#annoying_message {
+	transition: transform 1.4s ease-in;
+	transform: translate(-50%, -150%);
+	opacity: 0;
+	text-align: center;
+	height: 95vh;
+}
+
+
+#annoying_message.visible {
+	transform: translate(-50%, 100%);
+	opacity: 1;
+}
+
+.insect.catch {
+	transform: translate(-50%,-50%) scale(0);
+}
+
