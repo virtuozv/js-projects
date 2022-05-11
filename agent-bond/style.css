@@ -44,35 +44,8 @@ body {
 	position: relative;
 }
 
-.number {
-	font-size:300px;
-	font-family: 'Lora', serif;
-	color: #c0c0c0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	opacity: 0.4;
-	transform: translate(-50%, -50%);
-	z-index: 0;
-}
-
-.heading {
-	letter-spacing: 2px;
-	font-size: 60px;
-	position: absolute;
-	top: 50px;
-	margin: 0;
-}
-
-.subheading {
-	font-family: 'Lora', serif;
-	font-size: 30px;
-	position: absolute;
-	text-transform: uppercase;
-	top: 80%;
-	left: 50%;
-	margin: 0;
-	transform: translate(-50%, -50%);
+.row.small .box {
+	min-height: 200px;
 }
 
 .row.mid .box {
@@ -93,6 +66,43 @@ body {
 	background-position: top right;
 }
 
+.heading {
+	letter-spacing: 2px;
+	font-size: 60px;
+	position: absolute;
+	top: 50px;
+	margin: 0;
+}
+
+.subheading {
+	font-family: 'Lora', serif;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+}
+
+.row.mid .subheading {
+	top: 80%;
+}
+
+
+.number {
+	font-family: 'Lora', serif;
+	font-size:300px;
+	color: #c0c0c0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	opacity: 0.4;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+
 .movies {
 	font-family: 'Lora', sans-serif;
 	font-size: 18px;
@@ -112,4 +122,78 @@ body {
 	position: absolute;
 	bottom: 10px;
 	margin: 0;
+}
+
+.box:first-of-type .name, .box:first-of-type .heading {
+	right: 10px;
+}
+
+.box:last-of-type .name, .box:last-of-type .heading {
+	left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+	.hidden-big {
+		display: inline;
+	}
+
+	.hidden-small {
+		display: none;
+	}
+
+	.box {
+		order: 2;
+		min-height: auto;
+	}
+
+	.box.dark {
+		order: 1;
+		min-height: 300px;
+	}
+
+	.heading {
+		font-size: 40px;
+		text-align: center;
+		right: 0 !important;
+		top: 20px;
+		width: 100%;
+	}
+
+	.subheading {
+		font-size: 25px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.number {
+		font-size: 200px;
+	}
+
+	.name {
+		line-height: 1;
+		left: 50% !important;
+		right: auto !important;
+		text-align: center;
+		transform: translateX(-50%);
+		width: 100%;
+	}
+
+	.movies {
+		text-align: center;
+	}
+
+	.row.small .box {
+		padding: 20px;
+		min-height: auto;
+	}
+
+	.row.mid .box {
+		min-height: 100px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.row, .box {
+		width: 100%;
+	}
 }
